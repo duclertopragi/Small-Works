@@ -1,48 +1,26 @@
-# at the 10th line program: why "int(num/2)+1"?
-# I think it should be just "num" I modified it at below
-start = int(input("Enter the starting number: "))
-end = int(input("Enter the ending number: "))
+print("""
+      **********************************************************************
+      
+      **** This is a prime number listing program within a given range *****
+      
+      **********************************************************************
+""")
 
-print("Prime numbers between", start, "and", end, "are: ")
-
-for num in range(start, end+1):
-    # prime numbers are greater than 1
-    if num > 1:
-        for i in range(2, int(num/2)+1):
-            if (num % i) == 0:
+while True:
+    
+    num1 = int(input("Please indicate the lowest number: "))
+    num2 = int(input("Please indicate the highest number: "))
+    
+    if num2 > num1:
+        break
+    
+    else:
+        print("Please input numbers as requested")
+    
+for j in range(num1, num2+1):
+    if j > 1:
+        for i in range(2, int(j/2)+1): # Attention! Attention! This is a sharp expression: "int(j/2)+1". There is no need to look for a divider after the half the number cos there can't be any more divider after the half of it...
+            if (j % i == 0):
                 break
         else:
-            print(num)
-
-
-# This is the algo should be
-start = int(input("Enter the starting number: "))
-end = int(input("Enter the ending number: "))
-
-print("Prime numbers between", start, "and", end, "are: ")
-
-for num in range(start, end+1):
-    # prime numbers are greater than 1
-    if num > 1:
-        for i in range(2, num):
-            if (num % i) == 0:
-                break
-        else:
-            print(num)
-            
-# And lastly this is the I wrote
-# but I was planning to add a while loop for checking
-# bigger/lower number between 38th line and 40th line
-
-print("This is a listing prime numbers within given range program")    
-
-nr1 = int(input("Please indicate the lowest number: "))
-nr2 = int(input("Please indicate the highest number: "))
-
-for n in range(nr1, nr2+1):
-    if n > 1:
-        for i in range(2,n):
-            if (i % n == 0):
-                print(n, "is not a prime number")
-            else:
-                print(n, "is a prime number")
+            print(j, "is a prime number")
