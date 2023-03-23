@@ -1,8 +1,8 @@
-# List perfect number(s) that in given range
+# List perfect number(s) within given range
 
 print("""
 ***** This is a perfect number query. *****\n
-You need to determine 'starting' and 'ending' of the range in order to run the query.
+You need to input 'starting' and 'ending' of the range in order to run the query.
 """)
 
 nb1 = int(input("Enter the starting number of the range: ")) 
