@@ -129,7 +129,7 @@ def game_over():
     window.blit(text, rect)
     pygame.display.update()
 
-    pygame.time.wait(1000)
+    pygame.time.wait(200)
 
     pygame.quit()
     quit()
@@ -140,7 +140,7 @@ grid = [[0] * GRID_WIDTH for _ in range(GRID_HEIGHT)]
 current_piece = new_piece()
 next_piece = new_piece()
 score = 0
-fps = 10
+fps = 2
 
 # Start the game loop
 while True:
