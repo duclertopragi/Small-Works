@@ -11,11 +11,9 @@ while True:
     num1 = int(input("Please indicate the lowest number: "))
     num2 = int(input("Please indicate the highest number: "))
     
-    if num2 > num1:
-        break
-    
-    else:
-        print("Please input numbers as requested")
+    if num2 < num1:
+        print("You have entered numbers incorrectly")
+        continue
     
 for j in range(num1, num2+1):
     if j > 1:
