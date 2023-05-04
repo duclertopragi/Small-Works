@@ -11,7 +11,7 @@ while True:
     end = int(input("Please indicate the highest figure in your range: "))
     
     if start < 0 or end < 0:
-        print("You typed in incorrect figure, please input positive integer")
+        print("You've typed in incorrect figures, please input positive integers")
         continue
     
     perfect_numbers = []
