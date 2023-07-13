@@ -30,7 +30,7 @@ for num in range(start, end+1):
 # Print the list of Armstrong numbers
 print("The Armstrong numbers in the range", f"{start:,d}", "to", f"{end:,d}", "are:")
 if armstrong_nums == []:
-    print("There is no Armstrong number that you have inputed...")
+    print("There is no Armstrong number that you have inputted...")
 
     for j in armstrong_nums:
         print("{:,}".format(j))
